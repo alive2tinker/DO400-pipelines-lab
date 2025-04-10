@@ -12,6 +12,10 @@ pipeline{
 					when {
 						expression { return params.RUN_INTEGRATION_TESTS }
 					}
+					steps {
+						// there were no steps, that's why the syntax error
+						echo 'running integration tests'
+					}
 				}
 				stage('Unit Tests'){
 					steps {
